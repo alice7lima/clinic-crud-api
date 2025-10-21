@@ -1,0 +1,31 @@
+[project]
+name = "clinic-crud-api"
+version = "0.1.0"
+description = "api que implementa a crud do sistema de uma clínica"
+authors = [
+    {name = "alice7lima",email = "alice7252011@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.118.0,<0.119.0)",
+    "uvicorn (>=0.37.0,<0.38.0)",
+    "sqlalchemy (>=2.0.43,<3.0.0)",
+    "email-validator (>=2.3.0,<3.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "pydantic-extra-types (>=2.10.5,<3.0.0)",
+    "streamlit (>=1.50.0,<2.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "python-jose (>=3.5.0,<4.0.0)",
+    "passlib (>=1.7.4,<2.0.0)",
+    "bcrypt (>=5.0.0,<6.0.0)",
+    "pydantic-settings (>=2.11.0,<3.0.0)",
+    "blue (>=0.9.1,<0.10.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

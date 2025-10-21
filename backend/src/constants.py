@@ -1,0 +1,1 @@
+PERSON_FIELDS = ['name', 'birth_date', 'document', 'gender', 'phone_number', 'email']
