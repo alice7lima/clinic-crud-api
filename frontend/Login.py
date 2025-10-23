@@ -20,7 +20,7 @@ if "logged_in" not in st.session_state or not st.session_state["logged_in"]:
 st.title("a clínica - Área de Gestão")
 st.subheader("Entre com uma conta de administrador")
 
-username = st.text_input("Usuário")
+username = st.text_input("Pacientes")
 password = st.text_input("Senha", type="password")
 
 if st.button("Entrar"):

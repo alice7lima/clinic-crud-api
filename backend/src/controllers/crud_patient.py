@@ -12,16 +12,6 @@ from src.schemas import PatientCreate, PatientUpdate
 def get_patients(db: Session) -> list[PatientModel]:
     return db.query(PatientModel).all()
 
-
-def search_patients(db: Session, patient_name: str) -> PatientModel | None:
-    return (
-        db.query(PatientModel)
-        .join(PersonModel, PatientModel.person_id == PersonModel.id)
-        .filter(PersonModel.name == patient_name)
-        .first()
-    )
-
-
 def create_patient(db: Session, patient_info: PatientCreate):
     person_exists = search_resource(
         table=PersonModel, filters={'document': patient_info.document}, db=db
